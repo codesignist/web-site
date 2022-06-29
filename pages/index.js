@@ -1,7 +1,12 @@
-const Home = () => (
-  <div>
-    <p>Home</p>
-  </div>
-);
+import styled from "styled-components";
 
-export default Home;
+const Home = styled.div`
+  border: 1px solid #f00;
+`;
+
+export default () => (
+  <Home>
+    <h1>Yunus Eş</h1>
+    <p>Personal Website</p>
+  </Home>
+);
