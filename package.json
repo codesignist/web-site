@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/codesignist/website.git"
+  },
+  "keywords": [
+    "website",
+    "personal"
+  ],
+  "author": "codesignist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/codesignist/website/issues"
+  },
+  "homepage": "https://gitlab.com/codesignist/website#readme"
+}
