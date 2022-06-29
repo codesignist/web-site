@@ -4,7 +4,10 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,10 @@
   "bugs": {
     "url": "https://gitlab.com/codesignist/website/issues"
   },
-  "homepage": "https://gitlab.com/codesignist/website#readme"
+  "homepage": "https://gitlab.com/codesignist/website#readme",
+  "dependencies": {
+    "next": "^12.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
