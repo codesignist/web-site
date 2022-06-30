@@ -8,8 +8,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: 100%;
     background-color: #0C091D;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Inter, sans-serif;
   }
   #__next {
     height: 100%;
