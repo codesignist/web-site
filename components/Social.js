@@ -8,12 +8,13 @@ const Circle = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary);
+  background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   :hover {
     width: 52px;
     height: 52px;
     margin: -2px;
+    background-color: var(--primary);
   }
 `;
 

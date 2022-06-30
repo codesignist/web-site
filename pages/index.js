@@ -47,17 +47,17 @@ export default function Home() {
         </p>
         <SocialArea>
           <Social icon="youtube" href="https://www.youtube.com/yunuses" />
+          <Social icon="github" href="https://github.com/codesignist" />
+          <Social
+            icon="linkedin"
+            href="https://www.linkedin.com/in/codesignist/"
+          />
           <Social icon="twitter" href="https://twitter.com/codesignist" />
           <Social icon="facebook" href="https://www.facebook.com/codesignist" />
           <Social
             icon="instagram"
             href="https://www.instagram.com/codesignist"
           />
-          <Social
-            icon="linkedin"
-            href="https://www.linkedin.com/in/codesignist/"
-          />
-          <Social icon="github" href="https://github.com/codesignist" />
         </SocialArea>
       </div>
     </HomeArea>
