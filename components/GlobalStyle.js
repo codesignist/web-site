@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+  :root {
+    --primary: #aeff15;
+  }
   html,
   body {
     color: #fff;
