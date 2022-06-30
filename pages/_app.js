@@ -1,4 +1,4 @@
-import { ThemeProvider, DefaultTheme } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import GlobalStyle from "/components/GlobalStyle";
 
 const theme = {

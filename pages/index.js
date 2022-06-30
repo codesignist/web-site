@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Home = styled.div`
-  border: 1px solid #f00;
+  height: 100%;
 `;
 
 export default () => (
