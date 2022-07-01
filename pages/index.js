@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styled from "styled-components";
 import Social from "/components/Social";
 
@@ -36,6 +37,9 @@ const SocialArea = styled.div`
 export default function Home() {
   return (
     <HomeArea>
+      <Head>
+        <title>Yunus Eş</title>
+      </Head>
       <div>
         <Hello>Merhaba Dünya,</Hello>
         <H1>
