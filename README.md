@@ -31,6 +31,8 @@ Projenin klasör yapısı:
 	│	├── _app.js
 	│	├── _document.js
 	│	└── index.js
+	├── public
+	│	└── favicon.ico
     └── utils
         └── selection.json
 ```
