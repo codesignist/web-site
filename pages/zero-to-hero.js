@@ -58,6 +58,18 @@ const P = styled.p`
   margin-bottom: 1.5rem;
 `;
 
+const Blocks = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+`;
+
+const Block = styled.span`
+  padding: 4px 6px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+`;
+
 const Question = styled.div`
   font-weight: 600;
 `;
@@ -131,11 +143,34 @@ export default function ZeroToHero() {
         <H2>Teknolojiler</H2>
         <P>
           Eğitim programı içerisinde olacak konu ve teknolojilerin bir kısmı:
-          <br />
-          HTML, CSS, JavaScript, React, Next.js, git, npm, CLI, Node.js, Styled
-          Components, Mantine, ESLint, Prettier, Responsive, Testing, SVG, JSON,
-          XML, lodash, VS Code, Ant Design
         </P>
+        <Blocks>
+          {[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Next.js",
+            "git",
+            "npm",
+            "CLI",
+            "Node.js",
+            "Styled Components",
+            "Mantine",
+            "ESLint",
+            "Prettier",
+            "Responsive",
+            "Testing",
+            "SVG",
+            "JSON",
+            "XML",
+            "lodash",
+            "VS Code",
+            "Ant Design",
+          ].map((item, key) => (
+            <Block key={key}>{item}</Block>
+          ))}
+        </Blocks>
         <H2>Kazanımlar</H2>
         <P>Eğitim programı sonucunda hedeflenen kazanımlar:</P>
         <ul>
