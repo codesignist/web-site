@@ -10,6 +10,7 @@ const Circle = styled.a`
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
+  transition: background-color 0.2s;
   :hover {
     width: 52px;
     height: 52px;

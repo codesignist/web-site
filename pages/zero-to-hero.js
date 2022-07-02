@@ -83,7 +83,7 @@ export default function ZeroToHero() {
             Developer
           </Big>
           <StartDate>1 Ağustos 2022</StartDate>
-          <LinkButton icon="back" href="/">
+          <LinkButton icon="chevron-left" href="/">
             Ana sayfa
           </LinkButton>
         </H1>

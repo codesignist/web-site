@@ -8,7 +8,8 @@ const Rect = styled.a`
   font-size: 14px;
   font-weight: 400;
   color: #000;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 0.2s;
   cursor: pointer;
   :hover {
     background-color: var(--primary);
@@ -16,9 +17,9 @@ const Rect = styled.a`
 `;
 
 const LinkButton = ({ icon, href, children, ...props }) => (
-  <Link href={href}>
+  <Link href={href} passHref>
     <Rect {...props}>
-      <Icon size={20} icon={icon} /> {children}
+      <Icon size={12} icon={icon} /> {children}
     </Rect>
   </Link>
 );

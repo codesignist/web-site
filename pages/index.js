@@ -1,5 +1,5 @@
-import Link from "next/link";
 import styled from "styled-components";
+import LinkButton from "/components/LinkButton";
 import Social from "/components/Social";
 import device from "/utils/device";
 
@@ -54,13 +54,16 @@ export default function Home() {
           Ben <Color>Yunus Eş</Color>
         </H1>
         <p>
-          Yazılımcıyım, Kırklareli / Türkiye'de yaşıyorum. Yaklaşık 25 yılda
-          100'ün üzerinde çeşitli platformlarda projeler tamamlandım.
+          Yazılımcıyım, Kırklareli'de yaşıyorum.
+          <br />
+          Yaklaşık 25 yılda 100'ün üzerinde çeşitli platformlarda projeler
+          tamamlandım.
         </p>
+        <p>Güncel proje:</p>
         <p>
-          <Link href="/zero-to-hero">
-            <a>Zero to Hero FrontEnd Developer</a>
-          </Link>
+          <LinkButton icon="chevron-right" href="/zero-to-hero">
+            Zero to Hero
+          </LinkButton>
         </p>
         <SocialArea>
           <Social icon="youtube" href="https://www.youtube.com/yunuses" />
