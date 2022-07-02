@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 import Social from "/components/Social";
 
@@ -44,6 +45,11 @@ export default function Home() {
         <p>
           Yazılımcıyım, Kırklareli / Türkiye'de yaşıyorum. Yaklaşık 25 yılda
           100'ün üzerinde çeşitli platformlarda projeler tamamlandım.
+        </p>
+        <p>
+          <Link href="/zero-to-hero">
+            <a>Zero to Hero FrontEnd Developer</a>
+          </Link>
         </p>
         <SocialArea>
           <Social icon="youtube" href="https://www.youtube.com/yunuses" />

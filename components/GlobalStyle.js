@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
   a {
-    color: inherit;
+    color: var(--primary);
     text-decoration: none;
   }
   * {
