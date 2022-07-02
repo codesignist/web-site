@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import device from "/utils/device";
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
   max-width: 768px;
 `;
 
@@ -15,12 +16,18 @@ const H1 = styled.h1`
 const Mini = styled.span`
   font-size: 32px;
   font-weight: 300;
+  @media ${device.mobileL} {
+    font-size: 8vw;
+  }
 `;
 
 const Big = styled.div`
   font-size: 64px;
   font-weight: 900;
   line-height: 1em;
+  @media ${device.mobileL} {
+    font-size: 16vw;
+  }
 `;
 
 const H2 = styled.h2`
