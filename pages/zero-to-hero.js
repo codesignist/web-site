@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import LinkButton from "/components/LinkButton";
 import device from "/utils/device";
 
 const Wrapper = styled.div`
@@ -28,6 +29,12 @@ const Big = styled.div`
   @media ${device.mobileL} {
     font-size: 16vw;
   }
+`;
+
+const StartDate = styled.div`
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 300;
 `;
 
 const H2 = styled.h2`
@@ -63,6 +70,10 @@ export default function ZeroToHero() {
             <br />
             Developer
           </Big>
+          <StartDate>1 Ağustos 2022</StartDate>
+          <LinkButton icon="back" href="/">
+            Ana sayfa
+          </LinkButton>
         </H1>
       </Wrapper>
       <Wrapper>

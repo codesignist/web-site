@@ -8,6 +8,55 @@
     {
       "selection": [
         {
+          "order": 1,
+          "id": 0,
+          "prevSize": 32,
+          "name": "back"
+        }
+      ],
+      "id": 2,
+      "metadata": {
+        "name": "Afiado (subset)",
+        "designer": "Susana Passinhas",
+        "designerURL": "http://www.toicon.com/authors/4",
+        "url": "http://www.toicon.com/series/afiado",
+        "license": "CC BY 4.0",
+        "licenseURL": "http://www.toicon.com/license",
+        "iconsHash": 1993638885,
+        "importSize": {
+          "width": 32,
+          "height": 32
+        }
+      },
+      "height": 1024,
+      "prevSize": 32,
+      "icons": [
+        {
+          "id": 0,
+          "paths": [
+            "M490.976 512l181.024 181.024-90.496 90.496-271.552-271.52 271.52-271.52 90.528 90.496-181.024 181.024z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "rewind",
+            "go",
+            "previous",
+            "back",
+            "old"
+          ],
+          "grid": 16
+        }
+      ],
+      "invisible": false,
+      "colorThemes": []
+    },
+    {
+      "selection": [
+        {
           "ligatures": "home, house",
           "name": "home",
           "order": 0,
