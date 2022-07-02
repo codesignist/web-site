@@ -5,7 +5,7 @@ import device from "/utils/device";
 
 const HomeArea = styled.div`
   margin-left: 50%;
-  max-width: 400px;
+  max-width: 360px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -43,6 +43,11 @@ const SocialArea = styled.div`
   @media ${device.tablet} {
     justify-content: center;
   }
+  @media ${device.mobileL} {
+    grid-auto-flow: row;
+    justify-items: center;
+    grid-template-columns: repeat(3, 50px);
+  }
 `;
 
 export default function Home() {
@@ -56,13 +61,13 @@ export default function Home() {
         <p>
           Yazılımcıyım, Kırklareli'de yaşıyorum.
           <br />
-          Yaklaşık 25 yılda 100'ün üzerinde çeşitli platformlarda projeler
-          tamamlandım.
+          Yaklaşık 25 yılda 100'ün üzerinde çeşitli ölçülerde ve platformlarda
+          projeler tamamlandım.
         </p>
         <p>Güncel proje:</p>
         <p>
           <LinkButton icon="chevron-right" href="/zero-to-hero">
-            Zero to Hero
+            Zero to Hero <b>FrontEnd Developer</b>
           </LinkButton>
         </p>
         <SocialArea>

@@ -128,6 +128,14 @@ export default function ZeroToHero() {
           Ödev ağırlıklı eğitim programı olduğu için katılımcılara yoğun
           görevler düşmektedir.
         </P>
+        <H2>Teknolojiler</H2>
+        <P>
+          Eğitim programı içerisinde olacak konu ve teknolojilerin bir kısmı:
+          <br />
+          HTML, CSS, JavaScript, React, Next.js, git, npm, Node.js, Styled
+          Components, Mantine, ESLint, Prettier, JSON, XML, lodash, VS Code, Ant
+          Design
+        </P>
         <H2>Kazanımlar</H2>
         <P>
           Eğitim programı sonucunda hedeflenen kazanımlar:
