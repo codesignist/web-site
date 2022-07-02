@@ -4,16 +4,33 @@ import Social from "/components/Social";
 import device from "/utils/device";
 
 const HomeArea = styled.div`
-  margin-left: 50%;
-  max-width: 360px;
+  margin: auto;
+  padding: 16px;
+  max-width: 700px;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-gap: 24px;
+  grid-auto-flow: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: top;
   box-sizing: border-box;
   @media ${device.tablet} {
-    margin: auto;
+    max-width: 400px;
+    align-content: center;
     text-align: center;
+    grid-auto-flow: row;
+  }
+`;
+
+const Avatar = styled.img`
+  width: 200px;
+  border-radius: 50%;
+  border: 8px solid var(--primary);
+  @media ${device.tablet} {
+    width: 150px;
   }
 `;
 
@@ -29,6 +46,9 @@ const H1 = styled.h1`
   margin-bottom: 16px;
   font-size: 42px;
   font-weight: 900;
+  @media ${device.mobileL} {
+    font-size: 36px;
+  }
 `;
 
 const Color = styled.span`
@@ -53,6 +73,7 @@ const SocialArea = styled.div`
 export default function Home() {
   return (
     <HomeArea>
+      <Avatar src="Avatar.png" />
       <div>
         <Hello>Merhaba Dünya,</Hello>
         <H1>
@@ -61,8 +82,8 @@ export default function Home() {
         <p>
           Yazılımcıyım, Kırklareli'de yaşıyorum.
           <br />
-          Yaklaşık 25 yılda 100'ün üzerinde çeşitli ölçülerde ve platformlarda
-          projeler tamamlandım.
+          Yaklaşık 25 yıl içinde 100'ün üzerinde çeşitli boyutlarda ve
+          platformlarda projeler tamamlandım.
         </p>
         <p>Güncel proje:</p>
         <p>
