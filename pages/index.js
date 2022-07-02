@@ -6,7 +6,7 @@ import device from "/utils/device";
 const HomeArea = styled.div`
   margin: auto;
   padding: 16px;
-  max-width: 700px;
+  max-width: 600px;
   width: 100%;
   height: 100%;
   display: grid;
@@ -85,7 +85,10 @@ export default function Home() {
           Yaklaşık 25 yıl içinde 100'ün üzerinde çeşitli boyutlarda ve
           platformlarda projeler tamamlandım.
         </p>
-        <p>Güncel proje:</p>
+        <p>
+          Üzerinde titizlikle durduğum ve çok güzel bir ekiple desteklenen en
+          güncel projemiz:
+        </p>
         <p>
           <LinkButton icon="chevron-right" href="/zero-to-hero">
             Zero to Hero <b>FrontEnd Developer</b>
