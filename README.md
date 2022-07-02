@@ -30,7 +30,8 @@ Projenin klasör yapısı:
 	├── pages
 	│	├── _app.js
 	│	├── _document.js
-	│	└── index.js
+	│	├── index.js
+	│	└── zero-to-hero.js
 	├── public
 	│	└── favicon.ico
     └── utils
