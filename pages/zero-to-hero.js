@@ -2,6 +2,17 @@ import styled from "styled-components";
 import LinkButton from "/components/LinkButton";
 import device from "/utils/device";
 
+const Page = styled.div`
+  position: relative;
+  background-image: url("/svg/top-right.svg"), url("/svg/left.svg"),
+    url("/svg/bottom-right.svg");
+  background-repeat: no-repeat;
+  background-position: top right, center left, bottom right;
+  @media ${device.laptop} {
+    background-image: none;
+  }
+`;
+
 const Wrapper = styled.div`
   margin: 0 auto;
   padding: 0 2rem;
@@ -10,8 +21,9 @@ const Wrapper = styled.div`
 
 const H1 = styled.h1`
   text-align: center;
-  margin-top: 64px;
-  margin-bottom: 80px;
+  margin: 0;
+  padding-top: 64px;
+  padding-bottom: 80px;
 `;
 
 const Mini = styled.span`
@@ -61,7 +73,7 @@ const Footer = styled.div`
 
 export default function ZeroToHero() {
   return (
-    <>
+    <Page>
       <Wrapper>
         <H1>
           <Mini>Zero to Hero</Mini>
@@ -147,6 +159,6 @@ export default function ZeroToHero() {
         </Answer>
         <Footer />
       </Wrapper>
-    </>
+    </Page>
   );
 }
