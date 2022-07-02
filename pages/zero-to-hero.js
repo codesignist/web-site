@@ -16,8 +16,11 @@ const Page = styled.div`
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 24px;
   max-width: 768px;
+  @media ${device.mobileS} {
+    padding: 0 16px;
+  }
 `;
 
 const H1 = styled.h1`
@@ -183,8 +186,6 @@ export default function ZeroToHero() {
             "npm",
             "CLI",
             "Node.js",
-            "Styled Components",
-            "Mantine",
             "ESLint",
             "Prettier",
             "Responsive",
@@ -194,6 +195,8 @@ export default function ZeroToHero() {
             "XML",
             "lodash",
             "VS Code",
+            "Styled Components",
+            "Mantine",
             "Ant Design",
           ].map((item, key) => (
             <Block key={key}>{item}</Block>
