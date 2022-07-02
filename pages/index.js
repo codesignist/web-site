@@ -1,13 +1,20 @@
 import Link from "next/link";
 import styled from "styled-components";
 import Social from "/components/Social";
+import device from "/utils/device";
 
 const HomeArea = styled.div`
   margin-left: 50%;
-  width: 360px;
+  max-width: 400px;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  @media ${device.tablet} {
+    margin: auto;
+    text-align: center;
+  }
 `;
 
 const Hello = styled.span`
@@ -32,6 +39,10 @@ const SocialArea = styled.div`
   display: grid;
   grid-auto-flow: column;
   grid-gap: 8px;
+  justify-content: start;
+  @media ${device.tablet} {
+    justify-content: center;
+  }
 `;
 
 export default function Home() {
