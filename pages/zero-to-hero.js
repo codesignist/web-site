@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Icon from "/components/Icon";
 import LinkButton from "/components/LinkButton";
 import device from "/utils/device";
 
@@ -56,6 +57,18 @@ const H2 = styled.h2`
 const P = styled.p`
   line-height: 1.8;
   margin-bottom: 1.5rem;
+`;
+
+const YouTube = styled.a`
+  color: #fff;
+  span {
+    padding-left: 6px;
+  }
+  :hover {
+    span {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const Blocks = styled.div`
@@ -137,7 +150,14 @@ export default function ZeroToHero() {
           Dersler önceden belirlenmiş öğrencilere uygulamalı anlatımla
           işlenecek, YouTube canlı yayını üzerinden de diğer katılımcıların
           izlemesi ve yorumlarla derse katılması sağlanacak şekilde
-          hazırlanmıştır.
+          hazırlanmıştır. Aşağıdaki linkten kanala abone olarak canlı yayını
+          takip edebilirsiniz.
+        </P>
+        <P>
+          <YouTube href="https://www.youtube.com/yunuses" target="_blank">
+            <Icon icon="youtube" size={24} color="red" />
+            <span>youtube.com/yunuses</span>
+          </YouTube>
         </P>
         <P>
           Dersler 1 Ağustos 2022'de başlamak üzere;
