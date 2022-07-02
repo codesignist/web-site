@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import LinkButton from "/components/LinkButton";
+import LinkButton from "/components/LinkButton";
 import device from "/utils/device";
 
 const Page = styled.div`
@@ -8,9 +8,9 @@ const Page = styled.div`
     url("/svg/bottom-right.svg");
   background-repeat: no-repeat;
   background-position: top right, center left, bottom right;
-  /* @media ${device.laptop} {
+  @media ${device.laptop} {
     background-image: none;
-  } */
+  }
 `;
 
 const Wrapper = styled.div`
@@ -29,18 +29,18 @@ const H1 = styled.h1`
 const Mini = styled.span`
   font-size: 32px;
   font-weight: 300;
-  /* @media ${device.mobileL} {
+  @media ${device.mobileL} {
     font-size: 8vw;
-  } */
+  }
 `;
 
 const Big = styled.div`
   font-size: 64px;
   font-weight: 900;
   line-height: 1em;
-  /* @media ${device.mobileL} {
+  @media ${device.mobileL} {
     font-size: 16vw;
-  } */
+  }
 `;
 
 const StartDate = styled.div`
@@ -83,6 +83,9 @@ export default function ZeroToHero() {
             Developer
           </Big>
           <StartDate>1 Ağustos 2022</StartDate>
+          <LinkButton icon="chevron-left" href="/">
+            Ana sayfa
+          </LinkButton>
         </H1>
       </Wrapper>
       <Wrapper>
