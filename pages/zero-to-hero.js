@@ -132,9 +132,9 @@ export default function ZeroToHero() {
         <P>
           Eğitim programı içerisinde olacak konu ve teknolojilerin bir kısmı:
           <br />
-          HTML, CSS, JavaScript, React, Next.js, git, npm, Node.js, Styled
-          Components, Mantine, ESLint, Prettier, JSON, XML, lodash, VS Code, Ant
-          Design
+          HTML, CSS, JavaScript, React, Next.js, git, npm, CLI, Node.js, Styled
+          Components, Mantine, ESLint, Prettier, Responsive, Testing, SVG, JSON,
+          XML, lodash, VS Code, Ant Design
         </P>
         <H2>Kazanımlar</H2>
         <P>Eğitim programı sonucunda hedeflenen kazanımlar:</P>
@@ -142,6 +142,7 @@ export default function ZeroToHero() {
           <li>Temel yazılım bilgisi</li>
           <li>Kendi kendine öğrenme becerisi</li>
           <li>Araştırma becerisi</li>
+          <li>Problem çözme becerisi</li>
           <li>Dokümantasyon okuma becerisi</li>
           <li>Teknoloji okur yazarlığı</li>
           <li>Diğer yazılım dillerinin önünün açılması</li>
@@ -163,6 +164,8 @@ export default function ZeroToHero() {
           İş garantisi yok ancak pek çok firmanın yazılımcı arayışı mevcut. İş
           bulma potansiyeli yüksek.
         </Answer>
+        <Question>Eğitim sonrası sertifika var mı?</Question>
+        <Answer>Sertifika yok malesef.</Answer>
         <Footer />
       </Wrapper>
     </Page>
