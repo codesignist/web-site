@@ -67,16 +67,24 @@ const Blocks = styled.div`
 const Block = styled.span`
   padding: 4px 6px;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+  background-color: var(--primary);
+`;
+
+const QABlock = styled.div`
+  padding: 10px;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
 `;
 
 const Question = styled.div`
   font-weight: 600;
+  margin-bottom: 4px;
 `;
 
 const Answer = styled.div`
   font-weight: 300;
-  margin-bottom: 1em;
 `;
 
 const Footer = styled.div`
@@ -183,24 +191,31 @@ export default function ZeroToHero() {
           <li>Diğer yazılım dillerinin önünün açılması</li>
         </ul>
         <H2>Sık Sorulan Sorular</H2>
-        <Question>Eğitim ücretli mi?</Question>
-        <Answer>Ücretsiz</Answer>
-        <Question>Ne zaman başlayacak?</Question>
-        <Answer>1 Ağustos 2022</Answer>
-        <Question>Haftada kaç gün?</Question>
-        <Answer>
-          Pazartesi - Perşembe saat 22:00 olmak üzere haftada 2 gün ders
-          işlenecek.
-        </Answer>
-        <Question>Eğitim hangi programlama dili üzerinde olacak?</Question>
-        <Answer>JavaScript</Answer>
-        <Question>Eğitim sonrası iş garantisi var mı?</Question>
-        <Answer>
-          İş garantisi yok ancak pek çok firmanın yazılımcı arayışı mevcut. İş
-          bulma potansiyeli yüksek.
-        </Answer>
-        <Question>Eğitim sonrası sertifika var mı?</Question>
-        <Answer>Sertifika yok malesef.</Answer>
+        {[
+          { q: "Eğitim ücretli mi?", a: "Ücretsiz" },
+          { q: "Ne zaman başlayacak?", a: "1 Ağustos 2022" },
+          {
+            q: "Haftada kaç gün?",
+            a: "Pazartesi - Perşembe saat 22:00 olmak üzere haftada 2 gün ders işlenecek.",
+          },
+          {
+            q: "Eğitim hangi programlama dili üzerinde olacak?",
+            a: "JavaScript",
+          },
+          {
+            q: "Eğitim sonrası iş garantisi var mı?",
+            a: "İş garantisi yok ancak pek çok firmanın yazılımcı arayışı mevcut. İş bulma potansiyeli yüksek.",
+          },
+          {
+            q: "Eğitim sonrası sertifika var mı?",
+            a: "Sertifika yok malesef.",
+          },
+        ].map(({ q, a }, index) => (
+          <QABlock key={index}>
+            <Question>{q}</Question>
+            <Answer>{a}</Answer>
+          </QABlock>
+        ))}
         <Footer />
       </Wrapper>
     </Page>
