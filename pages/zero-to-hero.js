@@ -84,7 +84,7 @@ const Block = styled.span`
   padding: 4px 6px;
   border-radius: 4px;
   color: #000;
-  background-color: var(--primary);
+  background-color: rgba(255, 255, 255, 0.3);
 `;
 
 const QABlock = styled.div`
