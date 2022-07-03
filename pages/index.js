@@ -27,10 +27,12 @@ const HomeArea = styled.div`
 
 const Avatar = styled.img`
   width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 8px solid var(--primary);
   @media ${device.tablet} {
     width: 150px;
+    height: 150px;
   }
 `;
 
