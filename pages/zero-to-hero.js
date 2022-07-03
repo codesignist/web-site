@@ -69,7 +69,7 @@ const YouTube = styled.a`
     content: "";
     position: absolute;
     display: block;
-    top: 10px;
+    top: 5px;
     left: 2px;
     width: 20px;
     height: 10px;
@@ -97,6 +97,26 @@ const Block = styled.span`
   border-radius: 4px;
   color: #000;
   background-color: rgba(255, 255, 255, 0.3);
+`;
+
+const AchieveList = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  @media ${device.tablet} {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const Achieve = styled.li`
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  span {
+    margin-left: 10px;
+  }
 `;
 
 const QABlock = styled.div`
@@ -217,15 +237,22 @@ export default function ZeroToHero() {
         </Blocks>
         <H2>Kazanımlar</H2>
         <P>Eğitim programı sonucunda hedeflenen kazanımlar:</P>
-        <ul>
-          <li>Temel yazılım bilgisi</li>
-          <li>Kendi kendine öğrenme becerisi</li>
-          <li>Araştırma becerisi</li>
-          <li>Problem çözme becerisi</li>
-          <li>Dokümantasyon okuma becerisi</li>
-          <li>Teknoloji okur yazarlığı</li>
-          <li>Diğer yazılım dillerinin önünün açılması</li>
-        </ul>
+        <AchieveList>
+          {[
+            "Temel yazılım bilgisi",
+            "Kendi kendine öğrenme becerisi",
+            "Araştırma becerisi",
+            "Problem çözme becerisi",
+            "Dokümantasyon okuma becerisi",
+            "Teknoloji okur yazarlığı",
+            "Diğer yazılım dillerinin önünün açılması",
+          ].map((achieve, key) => (
+            <Achieve key={key}>
+              <Icon icon="check" size={16} color="#fff" />
+              <span>{achieve}</span>
+            </Achieve>
+          ))}
+        </AchieveList>
         <H2>Sık Sorulan Sorular</H2>
         {[
           { q: "Eğitim ücretli mi?", a: "Ücretsiz" },
