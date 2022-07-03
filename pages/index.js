@@ -73,7 +73,7 @@ const SocialArea = styled.div`
 export default function Home() {
   return (
     <HomeArea>
-      <Avatar src="Avatar.png" />
+      <Avatar src="Avatar.png" width={200} height={200} />
       <div>
         <Hello>Merhaba Dünya,</Hello>
         <H1>
