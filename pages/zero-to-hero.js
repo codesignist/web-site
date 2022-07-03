@@ -64,6 +64,18 @@ const P = styled.p`
 
 const YouTube = styled.a`
   color: #fff;
+  position: relative;
+  :before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 2px;
+    width: 20px;
+    height: 10px;
+    background-color: #fff;
+    z-index: -1;
+  }
   span {
     padding-left: 6px;
   }
