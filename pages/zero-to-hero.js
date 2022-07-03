@@ -173,7 +173,8 @@ export default function ZeroToHero() {
         </P>
         <H2>Teknolojiler</H2>
         <P>
-          Eğitim programı içerisinde olacak konu ve teknolojilerin bir kısmı:
+          Eğitim programı içerisinde olacak konular, teknolojiler ve npm
+          paketlerin bir kısmı:
         </P>
         <Blocks>
           {[
