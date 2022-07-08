@@ -86,6 +86,18 @@ const YouTube = styled.a`
   }
 `;
 
+const Discord = styled.a`
+  color: #fff;
+  span {
+    padding-left: 6px;
+  }
+  :hover {
+    span {
+      text-decoration: underline;
+    }
+  }
+`;
+
 const Blocks = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -157,6 +169,25 @@ export default function ZeroToHero() {
         </H1>
       </Wrapper>
       <Wrapper>
+        <H2>Tanıtım</H2>
+        <P>
+          En temel bilgisayar kullanımıyla başlayıp gelişmiş web sistemleri
+          yapacak seviyeye uygulamalı olarak birlikte çıkıyoruz. HTML, CSS, JS
+          konularını ödevlerle en uygun hızda temellendirip, Next.js, React, npm
+          gibi teknolojileri kullanarak modern JavaScript dünyasına geçiş
+          yapıyoruz. Sıfırdan başlayacak olan seçili bir kaç öğrenciyle ekran
+          paylaşımı da yaparak sınıf ortamını canlı yayında izleyicilerle
+          buluşturuyoruz. Ayrıca teorik konuları hızla geçip, gerçek web
+          uygulamalarını açık kaynak kodlu olarak birlikte yapıyoruz. Böylelikle
+          sadece anlatımdan ibaret olan video eğitimlerden çok daha farklı,
+          dinamik, eğlenceli ve sonuç alan eğitim modeliyle katılımcılara yeni
+          bir ufuk açıyor, hobi veya meslek kazandırıyoruz.
+        </P>
+        <P>
+          1 Ağustos 2022 Pazartesi başlıyoruz.
+          <br />
+          Görüşmek üzere.
+        </P>
         <H2>Giriş</H2>
         <P>
           Hızla gelişen dünyada yazılımcı ihtiyacı günden güne artmaktadır.
@@ -201,7 +232,16 @@ export default function ZeroToHero() {
         </P>
         <P>
           Ödev ağırlıklı eğitim programı olduğu için katılımcılara yoğun
-          görevler düşmektedir.
+          görevler düşmektedir. Ödevleri ve dersleri takip etmenin en iyi yolu
+          aynı amaçla bir araya gelmiş topluluğa katılmaktır.
+          <br />
+          Discord kanalımıza aşağıdaki linkten katılabilirsiniz:
+        </P>
+        <P>
+          <Discord href="https://discord.gg/N72tKgSVV3" target="_blank">
+            <Icon icon="discord" size={24} color="#fff" />
+            <span>discord.com</span>
+          </Discord>
         </P>
         <H2>Teknolojiler</H2>
         <P>
@@ -260,6 +300,10 @@ export default function ZeroToHero() {
           {
             q: "Haftada kaç gün?",
             a: "Pazartesi - Perşembe saat 22:00 olmak üzere haftada 2 gün ders işlenecek.",
+          },
+          {
+            q: "Canlı yayın kayıtları daha sonra izlenebilecek mi?",
+            a: "Evet. YouTube kanalı üzerinde kayıtlar daha sonra da izlenebilir olacak.",
           },
           {
             q: "Eğitim hangi programlama dili üzerinde olacak?",
