@@ -44,7 +44,7 @@ const Hello = styled.span`
 `;
 
 const H1 = styled.h1`
-  margin-top: 0;
+  margin-top: -10px;
   margin-bottom: 16px;
   font-size: 42px;
   font-weight: 900;
