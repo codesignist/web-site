@@ -23,10 +23,10 @@ Projenin klasör yapısı:
 	├── README.md
 	├── package.json
 	├── .gitignore
-    ├── components
-	│   ├── GlobalStyle.js
-	│   ├── Icon.js
-	│   └── Social.js
+	├── components
+	│	├── GlobalStyle.js
+	│	├── Icon.js
+	│	└── Social.js
 	├── pages
 	│	├── _app.js
 	│	├── _document.js
@@ -34,8 +34,8 @@ Projenin klasör yapısı:
 	│	└── zero-to-hero.js
 	├── public
 	│	└── favicon.ico
-    └── utils
-        └── selection.json
+	└── utils
+		└── selection.json
 ```
 
 ### Kullanılan Araçlar
