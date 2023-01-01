@@ -2,7 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import Icon from "./Icon";
 
-const Rect = styled.a`
+const Rect = styled.span`
   border-radius: 6px;
   padding: 6px;
   font-size: 14px;
@@ -17,7 +17,7 @@ const Rect = styled.a`
 `;
 
 const LinkButton = ({ icon, href, children, ...props }) => (
-  <Link href={href} passHref>
+  <Link href={href}>
     <Rect {...props}>
       <Icon size={12} icon={icon} /> {children}
     </Rect>
