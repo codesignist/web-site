@@ -3,6 +3,12 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   :root {
     --primary: #029fed;
+    --basic: #ffa629;
+    --javascript: #ffcd29;
+    --common: #14ae5c;
+    --react: #0d99ff;
+    --next: #757575;
+    --lesson: #9747ff;
   }
   html,
   body {

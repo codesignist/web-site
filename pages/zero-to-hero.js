@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Icon from "/components/Icon";
 import LinkButton from "/components/LinkButton";
 import device from "/utils/device";
@@ -151,6 +151,251 @@ const Footer = styled.div`
   padding-top: 128px;
 `;
 
+const Lesson = styled.div`
+  padding: 1em;
+  border-radius: 4px;
+  background-color: var(--${({ type }) => type});
+  ${({ type }) =>
+    ({
+      basic: css`
+        color: #000;
+      `,
+      javascript: css`
+        color: #000;
+      `,
+      common: css`
+        color: #fff;
+      `,
+      react: css`
+        color: #fff;
+      `,
+      next: css`
+        color: #fff;
+      `,
+      lesson: css`
+        color: #fff;
+      `,
+    }[type])};
+`;
+
+const types = [
+  {
+    name: "Temel Konular",
+    type: "basic",
+  },
+  {
+    name: "JavaScript",
+    type: "javascript",
+  },
+  {
+    name: "Ortak Konular",
+    type: "common",
+  },
+  {
+    name: "React",
+    type: "react",
+  },
+  {
+    name: "Next.js",
+    type: "next",
+  },
+  {
+    name: "Yönlendirici Konular",
+    type: "lesson",
+  },
+];
+
+const Lessons = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 6px;
+`;
+
+const Types = styled.div`
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+`;
+
+const Type = styled.div`
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  :before {
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--${({ type }) => type});
+  }
+`;
+
+const lessons = [
+  {
+    name: "Tanıtım",
+    type: "lesson",
+  },
+  {
+    name: "HTML",
+    type: "basic",
+  },
+  {
+    name: "CSS",
+    type: "basic",
+  },
+  {
+    name: "CSS",
+    type: "basic",
+  },
+  {
+    name: "HTML & CSS Uygulama",
+    type: "basic",
+  },
+  {
+    name: "HTML & CSS Uygulama",
+    type: "basic",
+  },
+  {
+    name: "HTML & CSS Uygulama",
+    type: "basic",
+  },
+  {
+    name: "JavaScript Giriş",
+    type: "javascript",
+  },
+  {
+    name: "Git",
+    type: "common",
+  },
+  {
+    name: "Node.js & npm",
+    type: "common",
+  },
+  {
+    name: "React",
+    type: "react",
+  },
+  {
+    name: "React",
+    type: "react",
+  },
+  {
+    name: "UI Kit - Mantine",
+    type: "react",
+  },
+  {
+    name: "React Card App",
+    type: "react",
+  },
+  {
+    name: "React Basket App",
+    type: "react",
+  },
+  {
+    name: "React Basket App II",
+    type: "react",
+  },
+  {
+    name: "Motivasyon",
+    type: "lesson",
+  },
+  {
+    name: "SVG",
+    type: "basic",
+  },
+  {
+    name: "Boyama Oyunu",
+    type: "basic",
+  },
+  {
+    name: "DOM",
+    type: "common",
+  },
+  {
+    name: "Debug",
+    type: "common",
+  },
+  {
+    name: "Analog Saat",
+    type: "basic",
+  },
+  {
+    name: "Problemler",
+    type: "lesson",
+  },
+  {
+    name: "Next.js Başlangıç",
+    type: "next",
+  },
+  {
+    name: "Next.js Nasıl Çalışır?",
+    type: "next",
+  },
+  {
+    name: "Styled Components",
+    type: "next",
+  },
+  {
+    name: "Next.js Upgrade",
+    type: "next",
+  },
+  {
+    name: "Next.js SSG Blog",
+    type: "next",
+  },
+  {
+    name: "Deploy",
+    type: "common",
+  },
+  {
+    name: "React Hook Form",
+    type: "react",
+  },
+  {
+    name: "Next.js CSR",
+    type: "next",
+  },
+  {
+    name: "Next.js SSR",
+    type: "next",
+  },
+  {
+    name: "Öğrenmeyi Öğrenmek",
+    type: "lesson",
+  },
+  {
+    name: "Yapay Zeka ve Araçlardan Faydalanmak",
+    type: "lesson",
+  },
+  {
+    name: "Orta Düzey CSS",
+    type: "basic",
+  },
+  {
+    name: "JavaScript: Püf Noktaları",
+    type: "javascript",
+  },
+  {
+    name: "Özetle React",
+    type: "react",
+  },
+  {
+    name: "React Hooks",
+    type: "react",
+  },
+  {
+    name: "API",
+    type: "next",
+  },
+  {
+    name: "Next.js i18n",
+    type: "next",
+  },
+];
+
 export default function ZeroToHero() {
   return (
     <Page>
@@ -167,6 +412,24 @@ export default function ZeroToHero() {
             Ana sayfa
           </LinkButton>
         </H1>
+      </Wrapper>
+      <Wrapper>
+        <H2>Ders Haritası</H2>
+        <Lessons>
+          {lessons.map(({ name, type }, index) => (
+            <Lesson key={index} type={type}>
+              {index > 0 && `${index} - `}
+              {name}
+            </Lesson>
+          ))}
+        </Lessons>
+        <Types>
+          {types.map(({ name, type }, index) => (
+            <Type key={index} type={type}>
+              {name}
+            </Type>
+          ))}
+        </Types>
       </Wrapper>
       <Wrapper>
         <H2>Tanıtım</H2>
