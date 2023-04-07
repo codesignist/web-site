@@ -1,6 +1,7 @@
 # Yunus Eş - Kişisel Websitesi
 
 Next.js ile geliştirilmiş sade kişisel web sitesi projesidir.
+Ders haritası eklendi.
 
 ## İçerik
 
