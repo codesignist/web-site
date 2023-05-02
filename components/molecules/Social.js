@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Icon from "./Icon";
+import Icon from "../atoms/Icon";
 
 const Circle = styled.a`
   width: 48px;

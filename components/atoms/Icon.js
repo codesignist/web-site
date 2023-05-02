@@ -1,5 +1,5 @@
 import IcomoonReact from "icomoon-react";
-import iconSet from "../utils/selection.json";
+import iconSet from "../../utils/selection.json";
 
 const Icon = ({ color, size = "100%", icon, className = "" }) => (
   <IcomoonReact
