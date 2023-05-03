@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Tanıtım",
+    "type": "lesson"
+  },
+  {
+    "name": "HTML",
+    "type": "basic"
+  },
+  {
+    "name": "CSS",
+    "type": "basic"
+  },
+  {
+    "name": "CSS",
+    "type": "basic"
+  },
+  {
+    "name": "HTML & CSS Uygulama",
+    "type": "basic"
+  },
+  {
+    "name": "HTML & CSS Uygulama",
+    "type": "basic"
+  },
+  {
+    "name": "HTML & CSS Uygulama",
+    "type": "basic"
+  },
+  {
+    "name": "JavaScript Giriş",
+    "type": "javascript"
+  },
+  {
+    "name": "Git",
+    "type": "common"
+  },
+  {
+    "name": "Node.js & npm",
+    "type": "common"
+  },
+  {
+    "name": "React",
+    "type": "react"
+  },
+  {
+    "name": "React",
+    "type": "react"
+  },
+  {
+    "name": "UI Kit - Mantine",
+    "type": "react"
+  },
+  {
+    "name": "React Card App",
+    "type": "react"
+  },
+  {
+    "name": "React Basket App",
+    "type": "react"
+  },
+  {
+    "name": "React Basket App II",
+    "type": "react"
+  },
+  {
+    "name": "Motivasyon",
+    "type": "lesson"
+  },
+  {
+    "name": "SVG",
+    "type": "basic"
+  },
+  {
+    "name": "Boyama Oyunu",
+    "type": "basic"
+  },
+  {
+    "name": "DOM",
+    "type": "common"
+  },
+  {
+    "name": "Debug",
+    "type": "common"
+  },
+  {
+    "name": "Analog Saat",
+    "type": "basic"
+  },
+  {
+    "name": "Problemler",
+    "type": "lesson"
+  },
+  {
+    "name": "Next.js Başlangıç",
+    "type": "next"
+  },
+  {
+    "name": "Next.js Nasıl Çalışır?",
+    "type": "next"
+  },
+  {
+    "name": "Styled Components",
+    "type": "next"
+  },
+  {
+    "name": "Next.js Upgrade",
+    "type": "next"
+  },
+  {
+    "name": "Next.js SSG Blog",
+    "type": "next"
+  },
+  {
+    "name": "Deploy",
+    "type": "common"
+  },
+  {
+    "name": "React Hook Form",
+    "type": "react"
+  },
+  {
+    "name": "Next.js CSR",
+    "type": "next"
+  },
+  {
+    "name": "Next.js SSR",
+    "type": "next"
+  },
+  {
+    "name": "Öğrenmeyi Öğrenmek",
+    "type": "lesson"
+  },
+  {
+    "name": "Yapay Zeka ve Araçlardan Faydalanmak",
+    "type": "lesson"
+  },
+  {
+    "name": "Orta Düzey CSS",
+    "type": "basic"
+  },
+  {
+    "name": "JavaScript: Püf Noktaları",
+    "type": "javascript"
+  },
+  {
+    "name": "Özetle React",
+    "type": "react"
+  },
+  {
+    "name": "React Hooks",
+    "type": "react"
+  },
+  {
+    "name": "API",
+    "type": "next"
+  },
+  {
+    "name": "Next.js i18n",
+    "type": "next"
+  },
+  {
+    "name": "Icon",
+    "type": "next"
+  },
+  {
+    "name": "Ders Haritası",
+    "type": "next"
+  }
+]

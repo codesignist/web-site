@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Temel Konular",
+    "type": "basic"
+  },
+  {
+    "name": "JavaScript",
+    "type": "javascript"
+  },
+  {
+    "name": "Ortak Konular",
+    "type": "common"
+  },
+  {
+    "name": "React",
+    "type": "react"
+  },
+  {
+    "name": "Next.js",
+    "type": "next"
+  },
+  {
+    "name": "Yönlendirici Konular",
+    "type": "lesson"
+  }
+]

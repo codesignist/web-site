@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import LinkButton from "/components/LinkButton";
-import Social from "/components/Social";
+import LinkButton from "/components/atoms/LinkButton";
+import SocialArea from "/components/organisms/SocialArea";
 import device from "/utils/device";
 
 const HomeArea = styled.div`
@@ -57,21 +57,6 @@ const Color = styled.span`
   color: var(--primary);
 `;
 
-const SocialArea = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 8px;
-  justify-content: start;
-  @media ${device.tablet} {
-    justify-content: center;
-  }
-  @media ${device.mobileL} {
-    grid-auto-flow: row;
-    justify-items: center;
-    grid-template-columns: repeat(3, 50px);
-  }
-`;
-
 export default function Home() {
   return (
     <HomeArea>
@@ -96,20 +81,16 @@ export default function Home() {
             Zero to Hero <b>FrontEnd Developer</b>
           </LinkButton>
         </p>
-        <SocialArea>
-          <Social icon="youtube" href="https://www.youtube.com/yunuses" />
-          <Social icon="github" href="https://github.com/codesignist" />
-          <Social
-            icon="linkedin"
-            href="https://www.linkedin.com/in/codesignist/"
-          />
-          <Social icon="twitter" href="https://twitter.com/codesignist" />
-          <Social icon="facebook" href="https://www.facebook.com/codesignist" />
-          <Social
-            icon="instagram"
-            href="https://www.instagram.com/codesignist"
-          />
-        </SocialArea>
+        <SocialArea
+          data={{
+            youtube: "https://www.youtube.com/yunuses",
+            github: "https://github.com/codesignist",
+            linkedin: "https://www.linkedin.com/in/codesignist/",
+            twitter: "https://twitter.com/codesignist",
+            facebook: "https://www.facebook.com/codesignist",
+            instagram: "https://www.instagram.com/codesignist",
+          }}
+        />
       </div>
     </HomeArea>
   );
