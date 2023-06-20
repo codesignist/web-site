@@ -166,5 +166,13 @@
   {
     "name": "Ders Haritası",
     "type": "next"
+  },
+  {
+    "name": "Atomic Design",
+    "type": "react"
+  },
+  {
+    "name": "Responsive",
+    "type": "basic"
   }
 ]
