@@ -3,6 +3,9 @@ import styled, { css } from "styled-components";
 const Lesson = styled.div`
   padding: 1em;
   border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   background-color: var(--${({ type }) => type});
   ${({ type }) =>
     ({

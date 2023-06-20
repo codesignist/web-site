@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Icon from "/components/atoms/Icon";
 import LinkButton from "/components/atoms/LinkButton";
 import LessonsMap from "/components/organisms/LessonsMap";
@@ -20,7 +20,14 @@ const Page = styled.div`
 const Wrapper = styled.div`
   margin: 0 auto;
   padding: 0 24px;
-  max-width: 768px;
+  ${({ block }) =>
+    block
+      ? css`
+          max-width: 1200px;
+        `
+      : css`
+          max-width: 768px;
+        `}
   @media ${device.mobileS} {
     padding: 0 16px;
   }
@@ -171,7 +178,7 @@ export default function ZeroToHero() {
           </LinkButton>
         </H1>
       </Wrapper>
-      <Wrapper>
+      <Wrapper block>
         <H2>Ders Haritası</H2>
         <LessonsMap lessons={lessons} types={types} />
       </Wrapper>
