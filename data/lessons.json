@@ -174,5 +174,13 @@
   {
     "name": "Responsive",
     "type": "basic"
+  },
+  {
+    "name": "CSS Animation",
+    "type": "basic"
+  },
+  {
+    "name": "Yol Haritası",
+    "type": "lesson"
   }
 ]

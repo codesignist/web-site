@@ -10,12 +10,10 @@ const Circle = styled.a`
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
-  transition: background-color 0.2s;
-  :hover {
-    width: 52px;
-    height: 52px;
-    margin: -2px;
+  transition: all 0.2s;
+  &:hover {
     background-color: var(--primary);
+    box-shadow: 0 0 30px 5px var(--primary-alpha);
   }
 `;
 

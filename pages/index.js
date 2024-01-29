@@ -74,9 +74,16 @@ export default function Home() {
         </p>
         <p>
           Üzerinde titizlikle durduğum ve çok güzel bir ekiple desteklenen en
-          güncel projemiz:
+          güncel projelerimiz:
         </p>
         <p>
+          <LinkButton
+            icon="chevron-right"
+            href="https://yerlimi.net"
+            target="_blank"
+          >
+            Yerli mi?
+          </LinkButton>{" "}
           <LinkButton icon="chevron-right" href="/zero-to-hero">
             Zero to Hero <b>FrontEnd Developer</b>
           </LinkButton>

@@ -12,7 +12,7 @@ const Type = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  :before {
+  &:before {
     content: " ";
     display: block;
     width: 24px;

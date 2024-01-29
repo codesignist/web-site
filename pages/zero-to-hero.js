@@ -20,14 +20,7 @@ const Page = styled.div`
 const Wrapper = styled.div`
   margin: 0 auto;
   padding: 0 24px;
-  ${({ block }) =>
-    block
-      ? css`
-          max-width: 1200px;
-        `
-      : css`
-          max-width: 768px;
-        `}
+  max-width: ${({ $full }) => ($full ? 1200 : 768)}px;
   @media ${device.mobileS} {
     padding: 0 16px;
   }
@@ -178,7 +171,7 @@ export default function ZeroToHero() {
           </LinkButton>
         </H1>
       </Wrapper>
-      <Wrapper block>
+      <Wrapper $full>
         <H2>Ders Haritası</H2>
         <LessonsMap lessons={lessons} types={types} />
       </Wrapper>
