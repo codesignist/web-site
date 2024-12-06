@@ -84,7 +84,7 @@ export default function Home() {
           güncel projelerimiz:
         </p>
         <LinkFlex>
-          <LinkButton icon="chevron-right" href="/dev-team" target="_blank">
+          <LinkButton icon="chevron-right" href="/dev-team">
             {"<DevTeam />"}
           </LinkButton>
           <LinkButton

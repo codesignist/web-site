@@ -1,25 +1,20 @@
 import styled from "styled-components";
 
-import aa from "./assets/aa.png";
-import ihh from "./assets/ihh.png";
-import plusstand from "./assets/plusstand.png";
-import qarint from "./assets/qarint.png";
-
 const commentsData = [
   {
-    img: aa.src,
+    img: "/references/aa.png",
     title: "Anadolu Ajansı",
   },
   {
-    img: ihh.src,
+    img: "/references/ihh.png",
     title: "IHH",
   },
   {
-    img: plusstand.src,
+    img: "/references/plusstand.png",
     title: "Plusstand",
   },
   {
-    img: qarint.src,
+    img: "/references/qarint.png",
     title: "Qarint",
   },
 ];
@@ -29,49 +24,21 @@ const ReferencesContainer = styled.div`
   gap: 24px;
 `;
 
-const LogoContainer = styled.div`
-  justify-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  padding: 6px;
-  align-items: center;
-  justify-content: center;
-  perspective: 1000px;
-  transition: transform 2s ease;
-  transform-style: preserve-3d;
+const Logo = styled.img`
+  height: 40px;
+  opacity: 0.5;
+  transition: all 0.3s ease;
 
   &:hover {
-    animation: rotateAroundCylinder 5s infinite linear;
-  }
-
-  @keyframes rotateAroundCylinder {
-    0% {
-      transform: rotateY(0deg);
-    }
-    100% {
-      transform: rotateY(360deg);
-    }
+    opacity: 1;
   }
 `;
-
-const Logo = styled.img`
-  width: 200px;
-  height: 100px;
-  transition: transform 0.1s ease;
-`;
-
-const LogoTitle = styled.h3``;
 
 export default function References() {
   return (
     <ReferencesContainer>
       {commentsData.map((comment, index) => (
-        <div key={index}>
-          <LogoContainer>
-            <Logo src={comment.img} alt={comment.title} />
-            <h3>{comment.title}</h3>
-          </LogoContainer>
-        </div>
+        <Logo key={index} src={comment.img} alt={comment.title} />
       ))}
     </ReferencesContainer>
   );
