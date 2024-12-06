@@ -57,6 +57,13 @@ const Color = styled.span`
   color: var(--primary);
 `;
 
+const LinkFlex = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+`;
+
 export default function Home() {
   return (
     <HomeArea>
@@ -69,25 +76,28 @@ export default function Home() {
         <p>
           Yazılımcıyım, Kırklareli'de yaşıyorum.
           <br />
-          Yaklaşık 25 yıl içinde 100'ün üzerinde çeşitli boyutlarda ve
-          platformlarda projeler tamamlandım.
+          25 yıldır 100'ün üzerinde çeşitli boyutlarda ve platformlarda projeler
+          tamamladım.
         </p>
         <p>
           Üzerinde titizlikle durduğum ve çok güzel bir ekiple desteklenen en
           güncel projelerimiz:
         </p>
-        <p>
+        <LinkFlex>
+          <LinkButton icon="chevron-right" href="/dev-team" target="_blank">
+            {"<DevTeam />"}
+          </LinkButton>
           <LinkButton
             icon="chevron-right"
             href="https://yerlimi.net"
             target="_blank"
           >
             Yerli mi?
-          </LinkButton>{" "}
+          </LinkButton>
           <LinkButton icon="chevron-right" href="/zero-to-hero">
             Zero to Hero <b>FrontEnd Developer</b>
           </LinkButton>
-        </p>
+        </LinkFlex>
         <SocialArea
           data={{
             youtube: "https://www.youtube.com/yunuses",
