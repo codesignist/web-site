@@ -32,27 +32,12 @@ const H1 = styled.h1`
   padding-bottom: 80px;
 `;
 
-const Mini = styled.span`
+const Logo = styled.img`
   font-size: 32px;
   font-weight: 300;
   @media ${device.mobileL} {
     font-size: 8vw;
   }
-`;
-
-const Big = styled.div`
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1em;
-  @media ${device.mobileL} {
-    font-size: 16vw;
-  }
-`;
-
-const StartDate = styled.div`
-  margin-top: 16px;
-  font-size: 16px;
-  font-weight: 300;
 `;
 
 const H2 = styled.h2`
@@ -106,21 +91,15 @@ export default function DevTeam() {
   return (
     <Page>
       <Wrapper>
-        <LinkButton icon="chevron-left" href="/">
-          yunuses.com
-        </LinkButton>
         <H1>
-          <Mini>{"<DevTeam />"}</Mini>
-          <Big>"BİZ" Bir Ekibiz</Big>
-          <div>Hayalden geleceğe...</div>
-          <StartDate>Hayallerinizi kodluyoruz..</StartDate>
+          <Logo src="/svg/DevTeam.svg" />
         </H1>
+        <LinkButton icon="chevron-left" href="/">
+          Ana sayfa
+        </LinkButton>
       </Wrapper>
       <Wrapper>
-        <H2>"BİZ" kimiz?</H2>
-        <P>DevTeam hakkında</P>
-        <H2>{"<DevTeam/> olarak bir tık uzağınızdayız"}</H2>
-        <P>İşte Bizi Görebileceğiniz Bazı Siteler;</P>
+        <H2>Referanslarımız</H2>
         <References />
         <H2>Bizimle tanışarak;</H2>
         <AchieveList>
@@ -142,7 +121,6 @@ export default function DevTeam() {
         </AchieveList>
         <P> Profesyonel bir ekip ile çalışma fırsatı bulabilirsiniz.</P>
         <H2>Kullandığımız Teknolojiler</H2>
-        <P>Kullandığımız teknolojilerin ve npm paketlerin bir kısmı:</P>
         <Blocks>
           {[
             "HTML",
@@ -170,8 +148,6 @@ export default function DevTeam() {
             <Block key={key}>{item}</Block>
           ))}
         </Blocks>
-        <H2>BİZ'e Nasıl Ulaşabilirsiniz?</H2>
-        <div>İletişim için</div>
         <Footer />
       </Wrapper>
     </Page>
