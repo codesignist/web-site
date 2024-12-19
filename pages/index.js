@@ -6,7 +6,7 @@ import device from "/utils/device";
 const HomeArea = styled.div`
   margin: auto;
   padding: 16px;
-  max-width: 600px;
+  max-width: 570px;
   width: 100%;
   height: 100%;
   display: grid;
@@ -15,7 +15,6 @@ const HomeArea = styled.div`
   justify-content: center;
   justify-items: center;
   align-content: center;
-  align-items: top;
   box-sizing: border-box;
   @media ${device.tablet} {
     max-width: 400px;
@@ -62,6 +61,10 @@ const LinkFlex = styled.div`
   flex-direction: column;
   gap: 12px;
   margin-bottom: 12px;
+  align-items: baseline;
+  @media ${device.tablet} {
+    align-items: center;
+  }
 `;
 
 export default function Home() {
@@ -84,17 +87,11 @@ export default function Home() {
           güncel projelerimiz:
         </p>
         <LinkFlex>
-          <LinkButton icon="chevron-right" href="/dev-team">
-            {"<DevTeam />"}
-          </LinkButton>
-          <LinkButton
-            icon="chevron-right"
-            href="https://yerlimi.net"
-            target="_blank"
-          >
+          <LinkButton href="/dev-team">{"<DevTeam />"}</LinkButton>
+          <LinkButton href="https://yerlimi.net" target="_blank">
             Yerli mi?
           </LinkButton>
-          <LinkButton icon="chevron-right" href="/zero-to-hero">
+          <LinkButton href="/zero-to-hero">
             Zero to Hero <b>FrontEnd Developer</b>
           </LinkButton>
         </LinkFlex>
@@ -104,7 +101,6 @@ export default function Home() {
             github: "https://github.com/codesignist",
             linkedin: "https://www.linkedin.com/in/codesignist/",
             twitter: "https://twitter.com/codesignist",
-            facebook: "https://www.facebook.com/codesignist",
             instagram: "https://www.instagram.com/codesignist",
           }}
         />
