@@ -10,11 +10,6 @@ const SocialAreaDiv = styled.div`
   @media ${device.tablet} {
     justify-content: center;
   }
-  @media ${device.mobileL} {
-    grid-auto-flow: row;
-    justify-items: center;
-    grid-template-columns: repeat(3, 50px);
-  }
 `;
 
 const SocialArea = ({
