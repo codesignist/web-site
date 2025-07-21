@@ -69,8 +69,8 @@ export default function Home() {
         <p>
           Yazılımcıyım, Kırklareli'de yaşıyorum.
           <br />
-          Yaklaşık 25 yıl içinde 100'ün üzerinde çeşitli boyutlarda ve
-          platformlarda projeler tamamlandım.
+          25 yılda 100'ün üzerinde çeşitli boyutlarda ve platformlarda projeler
+          tamamlandım.
         </p>
         <p>
           Üzerinde titizlikle durduğum ve çok güzel bir ekiple desteklenen en
@@ -94,7 +94,6 @@ export default function Home() {
             github: "https://github.com/codesignist",
             linkedin: "https://www.linkedin.com/in/codesignist/",
             twitter: "https://twitter.com/codesignist",
-            facebook: "https://www.facebook.com/codesignist",
             instagram: "https://www.instagram.com/codesignist",
           }}
         />
