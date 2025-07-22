@@ -18,14 +18,14 @@ const SocialAreaDiv = styled.div`
 `;
 
 const SocialArea = ({
-  data: { youtube, github, linkedin, twitter, facebook, instagram },
+  data: { next_sosyal, youtube, github, linkedin, twitter, instagram },
 }) => (
   <SocialAreaDiv>
+    {next_sosyal && <Social icon="next_sosyal" href={next_sosyal} />}
     {youtube && <Social icon="youtube" href={youtube} />}
     {github && <Social icon="github" href={github} />}
     {linkedin && <Social icon="linkedin" href={linkedin} />}
     {twitter && <Social icon="twitter" href={twitter} />}
-    {facebook && <Social icon="facebook" href={facebook} />}
     {instagram && <Social icon="instagram" href={instagram} />}
   </SocialAreaDiv>
 );
