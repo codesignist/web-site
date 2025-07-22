@@ -4,26 +4,26 @@
     {
       "icon": {
         "paths": [
-          "M862.805 0c59.989 0 108.373 48.512 111.232 105.6v918.4l-114.219-96.981-62.72-57.088-68.437-59.648 28.587 94.080h-598.955c-59.819 0-108.373-45.44-108.373-105.643v-692.907c0-57.088 48.64-105.685 108.587-105.685h704zM601.771 242.475h-1.28l-8.619 8.533c88.448 25.6 131.243 65.579 131.243 65.579-57.003-28.501-108.373-42.752-159.744-48.512-37.12-5.76-74.24-2.731-105.6 0h-8.533c-20.053 0-62.72 8.533-119.893 31.36-19.925 8.661-31.36 14.336-31.36 14.336s42.752-42.752 136.96-65.579l-5.76-5.76c0 0-71.339-2.731-148.352 54.187 0 0-77.013 134.144-77.013 299.52 0 0 42.667 74.24 159.701 77.056 0 0 17.067-22.741 34.347-42.752-65.707-19.968-91.307-59.904-91.307-59.904s5.717 2.816 14.293 8.533h2.56c1.28 0 1.877 0.64 2.56 1.28v0.256c0.683 0.683 1.28 1.28 2.56 1.28 14.080 5.803 28.16 11.52 39.68 17.067 19.883 8.619 45.44 17.195 76.8 22.869 39.68 5.76 85.163 8.533 136.96 0 25.6-5.76 51.2-11.392 76.8-22.827 16.64-8.533 37.12-17.067 59.605-31.445 0 0-25.6 39.936-94.080 59.904 14.080 19.883 33.92 42.667 33.92 42.667 117.077-2.56 162.56-76.8 165.12-73.643 0-165.12-77.44-299.52-77.44-299.52-69.76-51.797-135.040-53.76-146.56-53.76zM608.939 430.763c29.995 0 54.187 25.6 54.187 56.96 0 31.573-24.32 57.173-54.187 57.173s-54.187-25.6-54.187-56.917c0.085-31.573 24.448-57.088 54.187-57.216zM415.104 430.763c29.867 0 54.016 25.6 54.016 56.96 0 31.573-24.32 57.173-54.187 57.173s-54.187-25.6-54.187-56.917c0-31.573 24.32-57.088 54.357-57.216z"
+          "M982.389 49.861c-0.383-1.877-1.305-3.603-2.639-4.974s-3.041-2.335-4.903-2.773c-124.294-30.4-411.413 77.919-567.139 233.524-27.75 27.525-53.055 57.413-75.627 89.324-47.998-4.345-95.995-0.688-136.864 17.139-115.404 50.738-148.98 183.265-158.35 240.156-0.507 3.112-0.291 6.306 0.632 9.326 0.927 3.024 2.533 5.79 4.699 8.085s4.833 4.071 7.789 5.167c2.96 1.11 6.136 1.509 9.275 1.188l185.299-20.341c0.129 13.976 0.968 27.943 2.515 41.828 0.966 9.601 5.249 18.567 12.112 25.349l71.748 71.748c6.79 6.865 15.762 11.151 25.371 12.112 13.808 1.538 27.685 2.375 41.576 2.513l-20.319 185.132c-0.319 3.146 0.089 6.312 1.192 9.263 1.103 2.955 2.868 5.621 5.164 7.779 2.293 2.163 5.058 3.773 8.072 4.696s6.202 1.147 9.318 0.643c56.91-9.148 189.708-42.719 240.151-158.1 17.828-40.914 21.488-88.665 17.371-136.433 32.005-22.547 61.985-47.856 89.576-75.632 156.296-155.425 263.921-436.235 233.981-566.723zM609.491 415.242c-13.655-13.645-22.955-31.036-26.717-49.971-3.768-18.931-1.838-38.557 5.547-56.39 7.388-17.834 19.897-33.076 35.946-43.804 16.049-10.724 34.92-16.446 54.225-16.446 19.301 0 38.175 5.721 54.225 16.446s28.559 25.971 35.944 43.804c7.388 17.834 9.319 37.46 5.553 56.39-3.768 18.932-13.068 36.322-26.717 49.971-9.059 9.078-19.814 16.277-31.651 21.185-11.843 4.915-24.537 7.442-37.35 7.442-12.82 0-25.515-2.527-37.356-7.442-11.839-4.908-22.594-12.108-31.647-21.185z",
+          "M177.469 731.431c-22.788 2.798-43.987 13.131-60.234 29.349-40.278 40.414-44.097 190.094-44.097 190.094s149.772-3.816 190.071-44.14c16.29-16.217 26.635-37.458 29.374-60.279z"
         ],
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "discord"
-        ],
         "grid": 14,
+        "tags": ["next_sosyal"],
         "colorPermutations": {}
       },
       "attrs": [],
       "properties": {
-        "order": 1,
-        "id": 0,
+        "order": 23,
+        "id": 330,
+        "name": "next_sosyal",
         "prevSize": 32,
-        "name": "discord"
+        "code": 59648
       },
       "setIdx": 0,
-      "setId": 4,
+      "setId": 1,
       "iconIdx": 0
     },
     {
@@ -35,9 +35,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "check"
-        ],
+        "tags": ["check"],
         "defaultCode": 61452,
         "grid": 14
       },
@@ -46,11 +44,12 @@
         "name": "check",
         "id": 16,
         "order": 19,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 61452
       },
-      "setIdx": 1,
-      "setId": 3,
-      "iconIdx": 16
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -61,9 +60,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "chevron-left"
-        ],
+        "tags": ["chevron-left"],
         "defaultCode": 61523,
         "grid": 14
       },
@@ -72,11 +69,12 @@
         "name": "chevron-left",
         "id": 82,
         "order": 11,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 61523
       },
-      "setIdx": 1,
-      "setId": 3,
-      "iconIdx": 82
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -87,9 +85,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "chevron-right"
-        ],
+        "tags": ["chevron-right"],
         "defaultCode": 61524,
         "grid": 14
       },
@@ -98,11 +94,12 @@
         "name": "chevron-right",
         "id": 83,
         "order": 12,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 61524
       },
-      "setIdx": 1,
-      "setId": 3,
-      "iconIdx": 83
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -113,9 +110,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "twitter"
-        ],
+        "tags": ["twitter"],
         "defaultCode": 61593,
         "grid": 14
       },
@@ -124,38 +119,12 @@
         "name": "twitter",
         "id": 145,
         "order": 13,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 61593
       },
-      "setIdx": 1,
-      "setId": 3,
-      "iconIdx": 145
-    },
-    {
-      "icon": {
-        "paths": [
-          "M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-        ],
-        "width": 602.2582857142856,
-        "attrs": [],
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "tags": [
-          "facebook",
-          "facebook-f"
-        ],
-        "defaultCode": 61594,
-        "grid": 14
-      },
-      "attrs": [],
-      "properties": {
-        "name": "facebook",
-        "id": 146,
-        "order": 14,
-        "prevSize": 32
-      },
-      "setIdx": 1,
-      "setId": 3,
-      "iconIdx": 146
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -166,9 +135,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "github"
-        ],
+        "tags": ["github"],
         "defaultCode": 61595,
         "grid": 14
       },
@@ -177,11 +144,12 @@
         "name": "github",
         "id": 147,
         "order": 17,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 61595
       },
-      "setIdx": 1,
-      "setId": 3,
-      "iconIdx": 147
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -192,9 +160,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "linkedin"
-        ],
+        "tags": ["linkedin"],
         "defaultCode": 61665,
         "grid": 14
       },
@@ -203,11 +169,12 @@
         "name": "linkedin",
         "id": 200,
         "order": 15,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 61665
       },
-      "setIdx": 1,
-      "setId": 3,
-      "iconIdx": 200
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -218,9 +185,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "youtube-play"
-        ],
+        "tags": ["youtube-play"],
         "defaultCode": 61802,
         "grid": 14
       },
@@ -229,11 +194,12 @@
         "name": "youtube",
         "id": 326,
         "order": 16,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 61802
       },
-      "setIdx": 1,
-      "setId": 3,
-      "iconIdx": 326
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 9
     },
     {
       "icon": {
@@ -244,9 +210,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "instagram"
-        ],
+        "tags": ["instagram"],
         "defaultCode": 61805,
         "grid": 14
       },
@@ -255,18 +219,19 @@
         "name": "instagram",
         "id": 329,
         "order": 18,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 61805
       },
-      "setIdx": 1,
-      "setId": 3,
-      "iconIdx": 329
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 10
     }
   ],
   "height": 1024,
   "preferences": {
     "showGlyphs": true,
     "showQuickUse": true,
-    "showQuickUse2": true,
+    "showQuickUse2": false,
     "showSVGs": true,
     "fontPref": {
       "prefix": "icon-",
@@ -284,7 +249,7 @@
     },
     "imagePref": {
       "prefix": "icon-",
-      "png": true,
+      "png": false,
       "useClassSelector": true,
       "color": 0,
       "bgColor": 16777215,
@@ -292,11 +257,16 @@
       "name": "icomoon",
       "height": 32,
       "columns": 16,
-      "margin": 16
+      "margin": 16,
+      "autoHost": false,
+      "minifyJs": true
     },
     "historySize": 50,
     "showCodes": true,
     "gridSize": 16,
-    "showGrid": true
+    "showGrid": true,
+    "quickUsageToken": {
+      "UntitledProject": "MDEwMjlhZGU2ZCMxNzUzMTExMzY3I1J2aW5vd3BHcHFOZ1l2aHJBWmJOeVUzTzZBWkNjeDB2QVY3WVVzN3ZOVHFO"
+    }
   }
 }

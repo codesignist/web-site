@@ -90,6 +90,7 @@ export default function Home() {
         </p>
         <SocialArea
           data={{
+            next_sosyal: "https://sosyal.teknofest.app/@codesignist",
             youtube: "https://www.youtube.com/yunuses",
             github: "https://github.com/codesignist",
             linkedin: "https://www.linkedin.com/in/codesignist/",
