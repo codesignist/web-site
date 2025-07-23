@@ -18,7 +18,7 @@ const Circle = styled.a`
 `;
 
 const Social = ({ icon, href }) => (
-  <Circle href={href} target="_blank">
+  <Circle rel="me" href={href} target="_blank">
     <Icon size={24} icon={icon} />
   </Circle>
 );
