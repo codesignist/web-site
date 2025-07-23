@@ -12,6 +12,10 @@ export default function App({ Component, pageProps }) {
         />
         <title>Yunus Eş</title>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta
+          name="fediverse:creator"
+          content="@codesignist@sosyal.teknofest.app"
+        />
         <meta property="og:site_name" content="Yunus Eş" key="site_name" />
         <meta property="og:title" content="Yunus Eş" />
         <meta property="og:description" content="Kişisel websitesi" />
