@@ -92,11 +92,11 @@
     "type": "lesson"
   },
   {
-    "name": "Next.js Başlangıç",
+    "name": "Next.js Başlangıç (Silindi)",
     "type": "next"
   },
   {
-    "name": "Next.js Nasıl Çalışır?",
+    "name": "Next.js Nasıl Çalışır? (Silindi)",
     "type": "next"
   },
   {
@@ -104,15 +104,15 @@
     "type": "next"
   },
   {
-    "name": "Next.js Upgrade",
+    "name": "Next.js Upgrade (Silindi)",
     "type": "next"
   },
   {
-    "name": "Next.js SSG Blog",
+    "name": "Next.js SSG Blog (Silindi)",
     "type": "next"
   },
   {
-    "name": "Deploy",
+    "name": "Deploy (Silindi)",
     "type": "common"
   },
   {
@@ -120,11 +120,11 @@
     "type": "react"
   },
   {
-    "name": "Next.js CSR",
+    "name": "Next.js CSR (Silindi)",
     "type": "next"
   },
   {
-    "name": "Next.js SSR",
+    "name": "Next.js SSR (Silindi)",
     "type": "next"
   },
   {
@@ -156,7 +156,7 @@
     "type": "next"
   },
   {
-    "name": "Next.js i18n",
+    "name": "Next.js i18n (Silindi)",
     "type": "next"
   },
   {

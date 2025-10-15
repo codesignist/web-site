@@ -180,10 +180,10 @@ export default function ZeroToHero() {
         <P>
           En temel bilgisayar kullanımıyla başlayıp gelişmiş web sistemleri
           yapacak seviyeye uygulamalı olarak birlikte çıkıyoruz. HTML, CSS, JS
-          konularını ödevlerle en uygun hızda temellendirip, Next.js, React, npm
-          gibi teknolojileri kullanarak modern JavaScript dünyasına geçiş
-          yapıyoruz. Sıfırdan başlayacak olan seçili bir kaç öğrenciyle ekran
-          paylaşımı da yaparak sınıf ortamını canlı yayında izleyicilerle
+          konularını ödevlerle en uygun hızda temellendirip, Next.js (silindi),
+          React, npm gibi teknolojileri kullanarak modern JavaScript dünyasına
+          geçiş yapıyoruz. Sıfırdan başlayacak olan seçili bir kaç öğrenciyle
+          ekran paylaşımı da yaparak sınıf ortamını canlı yayında izleyicilerle
           buluşturuyoruz. Ayrıca teorik konuları hızla geçip, gerçek web
           uygulamalarını açık kaynak kodlu olarak birlikte yapıyoruz. Böylelikle
           sadece anlatımdan ibaret olan video eğitimlerden çok daha farklı,
@@ -261,7 +261,7 @@ export default function ZeroToHero() {
             "CSS",
             "JavaScript",
             "React",
-            "Next.js",
+            "Next.js (Silindi)",
             "git",
             "npm",
             "CLI",

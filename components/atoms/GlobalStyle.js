@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --javascript: #ffcd29;
     --common: #14ae5c;
     --react: #0d99ff;
-    --next: #757575;
+    --next: #75757533;
     --lesson: #9747ff;
   }
   html,
