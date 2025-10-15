@@ -1,0 +1,23 @@
+name: Deploy Application
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ["self-hosted"]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: pnpm i
+
+      - name: Build application
+        run: pnpm run build
+
+      - name: Start application
+        run: pm2 restart yunusescom
