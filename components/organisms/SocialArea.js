@@ -6,10 +6,7 @@ const SocialAreaDiv = styled.div`
   display: grid;
   grid-auto-flow: column;
   grid-gap: 8px;
-  justify-content: start;
-  @media ${device.tablet} {
-    justify-content: center;
-  }
+  justify-content: center;
   @media ${device.mobileL} {
     grid-auto-flow: row;
     justify-items: center;
