@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </div>
       <div className="relative z-1 animate-fade-in-up [animation-delay:0.2s]">
-        <div className="bg-white/[0.02] backdrop-blur-[8px] border border-white/[0.08] rounded-2xl p-8 animate-fade-in-up [animation-delay:0.4s] transition-[border-color] duration-300 hover:border-[rgba(2,159,237,0.2)] max-md:p-6 max-md:rounded-xl">
+        <div className="bg-white/[0.02] backdrop-blur-[8px] border border-white/[0.08] rounded-2xl p-8 animate-fade-in-up [animation-delay:0.4s] transition-[border-color] duration-300 hover:border-[rgba(2,159,237,0.2)] max-md:bg-transparent max-md:backdrop-blur-none max-md:border-0 max-md:rounded-none max-md:p-0 max-md:hover:border-0">
           <span className="block leading-[1.2em] tracking-[2px] text-lg font-light text-white/70 mb-2 animate-fade-in-up [animation-delay:0.5s]">
             Merhaba Dünya,
           </span>
@@ -54,27 +54,16 @@ export default function Home() {
           </p>
           <p className="leading-[1.8em] text-base text-white/80 mb-0 animate-fade-in-up [animation-delay:0.7s] max-md:text-[15px] max-md:leading-[1.7em] max-[425px]:text-[13px] max-[425px]:leading-[1.6em]">
             2024 yılının son çeyreğinde, edindiğim birikimi müşterilerimize daha
-            iyi sunabilmek için CodeCube Software'i kurdum.
+            iyi sunabilmek için{" "}
+            <Link
+              href="https://codecube.com.tr"
+              target="_blank"
+              className="text-primary hover:underline"
+            >
+              CodeCube Software
+            </Link>
+            'i kurdum.
           </p>
-          <Link
-            href="https://codecube.com.tr"
-            target="_blank"
-            className="mt-6 flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/[0.08] hover:border-[rgba(2,159,237,0.4)] hover:bg-white/[0.05] transition-all duration-200 animate-fade-in-up [animation-delay:0.8s] max-md:flex-col max-md:text-center"
-          >
-            <img
-              className="h-10 w-auto shrink-0"
-              src="/codecube-logo-h.svg"
-              alt="CodeCube Software"
-            />
-            <div className="flex-1">
-              <div className="text-xs text-white/50">
-                Kurucusu olduğum şirket
-              </div>
-              <div className="text-sm text-white/90 font-medium">
-                codecube.com.tr →
-              </div>
-            </div>
-          </Link>
           <div className="mt-8 animate-fade-in-up [animation-delay:0.9s]">
             <SocialArea
               data={{
