@@ -1,26 +1,14 @@
 import Link from "next/link";
-import styled from "styled-components";
 import Icon from "./Icon";
 
-const RLink = styled(Link)`
-  border-radius: 6px;
-  padding: 6px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.2s;
-  cursor: pointer;
-  &:hover {
-    background-color: var(--primary);
-    box-shadow: 0 0 30px 5px var(--primary-alpha);
-  }
-`;
-
-const LinkButton = ({ icon, href, target, children, ...props }) => (
-  <RLink href={href} target={target}>
+const LinkButton = ({ icon, href, target, children }) => (
+  <Link
+    className="rounded-md p-1.5 text-sm font-normal text-black bg-white/30 transition-all duration-200 cursor-pointer hover:bg-primary hover:shadow-[0_0_30px_5px_var(--color-primary-alpha)]"
+    href={href}
+    target={target}
+  >
     <Icon size={12} icon={icon} /> {children}
-  </RLink>
+  </Link>
 );
 
 export default LinkButton;

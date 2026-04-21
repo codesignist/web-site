@@ -1,50 +1,28 @@
-import styled, { css } from "styled-components";
-
-const Lesson = styled.div`
-  padding: 1em;
-  border-radius: 4px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background-color: var(--${({ type }) => type});
-  ${({ type }) =>
-    ({
-      basic: css`
-        color: #000;
-      `,
-      javascript: css`
-        color: #000;
-      `,
-      common: css`
-        color: #fff;
-      `,
-      react: css`
-        color: #fff;
-      `,
-      next: css`
-        color: #fff;
-      `,
-      lesson: css`
-        color: #fff;
-      `,
-    }[type])};
-`;
-
-const LessonsDiv = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 6px;
-`;
+const typeColors = {
+  basic: { bg: "var(--color-type-basic)", text: "#000" },
+  javascript: { bg: "var(--color-type-javascript)", text: "#000" },
+  common: { bg: "var(--color-type-common)", text: "#fff" },
+  react: { bg: "var(--color-type-react)", text: "#fff" },
+  next: { bg: "var(--color-type-next)", text: "#fff" },
+  lesson: { bg: "var(--color-type-lesson)", text: "#fff" },
+};
 
 const Lessons = ({ lessons }) => (
-  <LessonsDiv>
+  <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-1.5">
     {lessons.map(({ name, type }, index) => (
-      <Lesson key={index} type={type}>
+      <div
+        key={index}
+        className="p-[1em] rounded whitespace-nowrap overflow-hidden text-ellipsis"
+        style={{
+          backgroundColor: typeColors[type]?.bg,
+          color: typeColors[type]?.text,
+        }}
+      >
         {index > 0 && `${index} - `}
         {name}
-      </Lesson>
+      </div>
     ))}
-  </LessonsDiv>
+  </div>
 );
 
 export default Lessons;

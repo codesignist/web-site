@@ -1,5 +1,5 @@
 import Head from "next/head";
-import GlobalStyle from "components/atoms/GlobalStyle";
+import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -23,7 +23,6 @@ export default function App({ Component, pageProps }) {
         <meta name="twitter:title" content="Yunus Eş" />
         <meta name="twitter:description" content="Kişisel websitesi" />
       </Head>
-      <GlobalStyle />
       <Component {...pageProps} />
     </>
   );
