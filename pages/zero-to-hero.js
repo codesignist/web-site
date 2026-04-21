@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
-import Icon from "/components/atoms/Icon";
-import LinkButton from "/components/atoms/LinkButton";
-import LessonsMap from "/components/organisms/LessonsMap";
-import device from "/utils/device";
-import lessons from "/data/lessons.json";
-import types from "/data/types.json";
+import Icon from "components/atoms/Icon";
+import LinkButton from "components/atoms/LinkButton";
+import LessonsMap from "components/organisms/LessonsMap";
+import device from "utils/device";
+import lessons from "data/lessons.json";
+import types from "data/types.json";
 
 const Page = styled.div`
   position: relative;
