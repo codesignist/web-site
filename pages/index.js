@@ -1,26 +1,49 @@
 import SocialArea from "components/organisms/SocialArea";
 import Link from "next/link";
 
+const stack = ["React", "Next.js", "Node.js", "MongoDB", "TypeScript"];
+
 export default function Home() {
   return (
     <div className="m-auto px-6 py-8 w-full max-w-[800px] min-h-screen grid grid-flow-col gap-10 justify-center justify-items-center content-center items-start relative before:content-[''] before:fixed before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[radial-gradient(circle_at_50%_50%,rgba(2,159,237,0.08)_0%,transparent_70%)] before:pointer-events-none before:z-0 max-md:max-w-full max-md:min-h-screen max-md:content-start max-md:text-center max-md:grid-flow-row max-md:gap-8 max-md:px-4 max-md:pt-8 max-md:pb-6">
-      <div className="relative z-1 animate-fade-in-up">
-        <img
-          className="w-[200px] h-[200px] rounded-full border-3 border-primary object-cover transition-transform duration-300 hover:scale-[1.02] max-md:w-[150px] max-md:h-[150px]"
-          src="Avatar.png"
-          width={200}
-          height={200}
-          alt="Yunus Eş"
-        />
+      <div className="relative z-1 animate-fade-in-up flex flex-col items-center">
+        <div className="relative">
+          <div className="absolute inset-0 rounded-full bg-primary/25 blur-3xl -z-1" />
+          <img
+            className="relative w-[200px] h-[200px] rounded-full border-3 border-primary object-cover transition-transform duration-300 hover:scale-[1.02] max-md:w-[150px] max-md:h-[150px]"
+            src="Avatar.png"
+            width={200}
+            height={200}
+            alt="Yunus Eş"
+          />
+        </div>
+        <div className="mt-5 text-center animate-fade-in-up [animation-delay:0.3s]">
+          <div className="text-xs uppercase tracking-[3px] text-primary font-medium">
+            Full Stack Developer
+          </div>
+          <div className="mt-1 text-xs text-white/50">
+            CodeCube Software Kurucusu
+          </div>
+        </div>
       </div>
       <div className="relative z-1 animate-fade-in-up [animation-delay:0.2s]">
         <div className="bg-white/[0.02] backdrop-blur-[8px] border border-white/[0.08] rounded-2xl p-8 animate-fade-in-up [animation-delay:0.4s] transition-[border-color] duration-300 hover:border-[rgba(2,159,237,0.2)] max-md:p-6 max-md:rounded-xl">
           <span className="block leading-[1.2em] tracking-[2px] text-lg font-light text-white/70 mb-2 animate-fade-in-up [animation-delay:0.5s]">
             Merhaba Dünya,
           </span>
-          <h1 className="m-0 mb-6 text-5xl font-black leading-[1.1em] text-white animate-fade-in-up [animation-delay:0.6s] max-[425px]:text-[28px]">
+          <h1 className="m-0 mb-5 text-5xl font-black leading-[1.1em] text-white animate-fade-in-up [animation-delay:0.6s] max-[425px]:text-[28px]">
             Ben <span className="text-primary">Yunus EŞ</span>
           </h1>
+          <div className="flex flex-wrap gap-2 mb-6 animate-fade-in-up [animation-delay:0.65s] max-md:justify-center">
+            {stack.map((tech) => (
+              <span
+                key={tech}
+                className="px-2.5 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-white/70"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
           <p className="leading-[1.8em] text-base text-white/80 mb-5 animate-fade-in-up [animation-delay:0.7s] max-md:text-[15px] max-md:leading-[1.7em] max-[425px]:text-[13px] max-[425px]:leading-[1.6em]">
             25 yılı aşkın süredir yazılım dünyasının içerisindeyim. Bu süre
             boyunca 100'ün üzerinde irili ufaklı projede, kimi zaman tek başıma,
@@ -33,15 +56,25 @@ export default function Home() {
             2024 yılının son çeyreğinde, edindiğim birikimi müşterilerimize daha
             iyi sunabilmek için CodeCube Software'i kurdum.
           </p>
-          <div className="mt-6 animate-fade-in-up [animation-delay:0.8s]">
-            <Link href="https://codecube.com.tr" target="_blank">
-              <img
-                className="h-20 w-auto mx-auto block"
-                src="/codecube-logo-h.svg"
-                alt="CodeCube Software"
-              />
-            </Link>
-          </div>
+          <Link
+            href="https://codecube.com.tr"
+            target="_blank"
+            className="mt-6 flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/[0.08] hover:border-[rgba(2,159,237,0.4)] hover:bg-white/[0.05] transition-all duration-200 animate-fade-in-up [animation-delay:0.8s] max-md:flex-col max-md:text-center"
+          >
+            <img
+              className="h-10 w-auto shrink-0"
+              src="/codecube-logo-h.svg"
+              alt="CodeCube Software"
+            />
+            <div className="flex-1">
+              <div className="text-xs text-white/50">
+                Kurucusu olduğum şirket
+              </div>
+              <div className="text-sm text-white/90 font-medium">
+                codecube.com.tr →
+              </div>
+            </div>
+          </Link>
           <div className="mt-8 animate-fade-in-up [animation-delay:0.9s]">
             <SocialArea
               data={{
