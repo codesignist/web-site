@@ -1,183 +1,35 @@
-import styled, { css } from "styled-components";
 import Icon from "components/atoms/Icon";
 import LinkButton from "components/atoms/LinkButton";
 import LessonsMap from "components/organisms/LessonsMap";
-import device from "utils/device";
 import lessons from "data/lessons.json";
 import types from "data/types.json";
 
-const Page = styled.div`
-  position: relative;
-  background-image: url("/svg/top-right.svg"), url("/svg/left.svg"),
-    url("/svg/bottom-right.svg");
-  background-repeat: no-repeat;
-  background-position: top right, center left, bottom right;
-  @media ${device.laptop} {
-    background-image: none;
-  }
-`;
-
-const Wrapper = styled.div`
-  margin: 0 auto;
-  padding: 0 24px;
-  max-width: ${({ $full }) => ($full ? 1200 : 768)}px;
-  @media ${device.mobileS} {
-    padding: 0 16px;
-  }
-`;
-
-const H1 = styled.h1`
-  text-align: center;
-  margin: 0;
-  padding-top: 64px;
-  padding-bottom: 80px;
-`;
-
-const Mini = styled.span`
-  font-size: 32px;
-  font-weight: 300;
-  @media ${device.mobileL} {
-    font-size: 8vw;
-  }
-`;
-
-const Big = styled.div`
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1em;
-  @media ${device.mobileL} {
-    font-size: 16vw;
-  }
-`;
-
-const StartDate = styled.div`
-  margin-top: 16px;
-  font-size: 16px;
-  font-weight: 300;
-`;
-
-const H2 = styled.h2`
-  margin-top: 2.5rem;
-`;
-
-const P = styled.p`
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-`;
-
-const YouTube = styled.a`
-  color: #fff;
-  position: relative;
-  :before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 5px;
-    left: 2px;
-    width: 20px;
-    height: 10px;
-    background-color: #fff;
-    z-index: -1;
-  }
-  span {
-    padding-left: 6px;
-  }
-  :hover {
-    span {
-      text-decoration: underline;
-    }
-  }
-`;
-
-const Discord = styled.a`
-  color: #fff;
-  span {
-    padding-left: 6px;
-  }
-  :hover {
-    span {
-      text-decoration: underline;
-    }
-  }
-`;
-
-const Blocks = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-`;
-
-const Block = styled.span`
-  padding: 4px 6px;
-  border-radius: 4px;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.3);
-`;
-
-const AchieveList = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  list-style-type: none;
-  padding: 0;
-  @media ${device.tablet} {
-    grid-template-columns: 1fr;
-  }
-`;
-
-const Achieve = styled.li`
-  padding: 10px;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.1);
-  span {
-    margin-left: 10px;
-  }
-`;
-
-const QABlock = styled.div`
-  padding: 10px;
-  margin-bottom: 1em;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.1);
-`;
-
-const Question = styled.div`
-  font-weight: 600;
-  margin-bottom: 4px;
-`;
-
-const Answer = styled.div`
-  font-weight: 300;
-`;
-
-const Footer = styled.div`
-  padding-top: 128px;
-`;
-
 export default function ZeroToHero() {
   return (
-    <Page>
-      <Wrapper>
-        <H1>
-          <Mini>Zero to Hero</Mini>
-          <Big>
+    <div className="relative bg-[url('/svg/top-right.svg'),url('/svg/left.svg'),url('/svg/bottom-right.svg')] bg-no-repeat [background-position:top_right,center_left,bottom_right] max-lg:bg-none">
+      <div className="mx-auto px-6 max-w-[768px] max-[320px]:px-4">
+        <h1 className="text-center m-0 pt-16 pb-20">
+          <span className="text-[32px] font-light max-[425px]:text-[8vw]">
+            Zero to Hero
+          </span>
+          <div className="text-[64px] font-black leading-none max-[425px]:text-[16vw]">
             FrontEnd
             <br />
             Developer
-          </Big>
-          <StartDate>1 Ağustos 2022</StartDate>
+          </div>
+          <div className="mt-4 text-base font-light">1 Ağustos 2022</div>
           <LinkButton icon="chevron-left" href="/">
             Ana sayfa
           </LinkButton>
-        </H1>
-      </Wrapper>
-      <Wrapper $full>
-        <H2>Ders Haritası</H2>
+        </h1>
+      </div>
+      <div className="mx-auto px-6 max-w-[1200px] max-[320px]:px-4">
+        <h2 className="mt-10">Ders Haritası</h2>
         <LessonsMap lessons={lessons} types={types} />
-      </Wrapper>
-      <Wrapper>
-        <H2>Tanıtım</H2>
-        <P>
+      </div>
+      <div className="mx-auto px-6 max-w-[768px] max-[320px]:px-4">
+        <h2 className="mt-10">Tanıtım</h2>
+        <p className="leading-[1.8] mb-6">
           En temel bilgisayar kullanımıyla başlayıp gelişmiş web sistemleri
           yapacak seviyeye uygulamalı olarak birlikte çıkıyoruz. HTML, CSS, JS
           konularını ödevlerle en uygun hızda temellendirip, Next.js (silindi),
@@ -189,73 +41,83 @@ export default function ZeroToHero() {
           sadece anlatımdan ibaret olan video eğitimlerden çok daha farklı,
           dinamik, eğlenceli ve sonuç alan eğitim modeliyle katılımcılara yeni
           bir ufuk açıyor, hobi veya meslek kazandırıyoruz.
-        </P>
-        <P>
+        </p>
+        <p className="leading-[1.8] mb-6">
           1 Ağustos 2022 Pazartesi başlıyoruz.
           <br />
           Görüşmek üzere.
-        </P>
-        <H2>Giriş</H2>
-        <P>
+        </p>
+        <h2 className="mt-10">Giriş</h2>
+        <p className="leading-[1.8] mb-6">
           Hızla gelişen dünyada yazılımcı ihtiyacı günden güne artmaktadır.
           Şirketler iyi yetişmiş eleman bulamamaktan şikayetçiyken, çalışanlar
           veya yeni bir işe girecek olanlar da şirketlerin yüksek
           beklentilerinden şikayetçidirler. Bu durum sonsuz bir döngüye
           dönüşerek insanları mutsuzluğa ve karamsarlığa itmektedir.
-        </P>
-        <P>
+        </p>
+        <p className="leading-[1.8] mb-6">
           Bunun çözümü olarak pek çok YouTube ve Udemy eğitimi mevcuttur ancak
           asıl öğrenme yöntemi olan katılımcının bizzat kendi çabası ve
           uygulamasıyla öğrenmesi konusunda pek az eğitim programı vardır.
           <br />
           <b>Zero to Hero FrontEnd Developer</b> programı işte bu eğitim
           eksiğini tamamlamak üzere hazırlanmıştır.
-        </P>
-        <H2>Amaç</H2>
-        <P>
+        </p>
+        <h2 className="mt-10">Amaç</h2>
+        <p className="leading-[1.8] mb-6">
           Temel bilgisayar kullanım bilgisi olan bir katılımcıyı önce FrontEnd
           dünyasına katıp daha sonra oyun geliştirici, mobil geliştirici, gömülü
           sistem geliştirici ve bunun gibi diğer alanlara yönlendirerek yazılım
           dünyasına giriş yapmasını sağlamaktır.
-        </P>
-        <H2>Eğitim Hakkında</H2>
-        <P>
+        </p>
+        <h2 className="mt-10">Eğitim Hakkında</h2>
+        <p className="leading-[1.8] mb-6">
           Dersler önceden belirlenmiş öğrencilere uygulamalı anlatımla
           işlenecek, YouTube canlı yayını üzerinden de diğer katılımcıların
           izlemesi ve yorumlarla derse katılması sağlanacak şekilde
           hazırlanmıştır. Aşağıdaki linkten kanala abone olarak canlı yayını
           takip edebilirsiniz.
-        </P>
-        <P>
-          <YouTube href="https://www.youtube.com/yunuses" target="_blank">
+        </p>
+        <p className="leading-[1.8] mb-6">
+          <a
+            className="text-white relative before:content-[''] before:absolute before:block before:top-[5px] before:left-[2px] before:w-5 before:h-2.5 before:bg-white before:-z-1"
+            href="https://www.youtube.com/yunuses"
+            target="_blank"
+          >
             <Icon icon="youtube" size={24} color="red" />
-            <span>youtube.com/yunuses</span>
-          </YouTube>
-        </P>
-        <P>
+            <span className="pl-1.5 hover:underline">
+              youtube.com/yunuses
+            </span>
+          </a>
+        </p>
+        <p className="leading-[1.8] mb-6">
           Dersler 1 Ağustos 2022'de başlamak üzere;
           <br />
           Pazartesi - Perşembe saat 22:00'de düzenli olarak işlenecektir.
-        </P>
-        <P>
+        </p>
+        <p className="leading-[1.8] mb-6">
           Ödev ağırlıklı eğitim programı olduğu için katılımcılara yoğun
           görevler düşmektedir. Ödevleri ve dersleri takip etmenin en iyi yolu
           aynı amaçla bir araya gelmiş topluluğa katılmaktır.
           <br />
           Discord kanalımıza aşağıdaki linkten katılabilirsiniz:
-        </P>
-        <P>
-          <Discord href="https://discord.gg/N72tKgSVV3" target="_blank">
+        </p>
+        <p className="leading-[1.8] mb-6">
+          <a
+            className="text-white"
+            href="https://discord.gg/N72tKgSVV3"
+            target="_blank"
+          >
             <Icon icon="discord" size={24} color="#fff" />
-            <span>discord.com</span>
-          </Discord>
-        </P>
-        <H2>Teknolojiler</H2>
-        <P>
+            <span className="pl-1.5 hover:underline">discord.com</span>
+          </a>
+        </p>
+        <h2 className="mt-10">Teknolojiler</h2>
+        <p className="leading-[1.8] mb-6">
           Eğitim programı içerisinde olacak konular, teknolojiler ve npm
           paketlerin bir kısmı:
-        </P>
-        <Blocks>
+        </p>
+        <div className="flex flex-wrap gap-1.5">
           {[
             "HTML",
             "CSS",
@@ -279,12 +141,19 @@ export default function ZeroToHero() {
             "Mantine",
             "Ant Design",
           ].map((item, key) => (
-            <Block key={key}>{item}</Block>
+            <span
+              key={key}
+              className="px-1.5 py-1 rounded text-black bg-white/30"
+            >
+              {item}
+            </span>
           ))}
-        </Blocks>
-        <H2>Kazanımlar</H2>
-        <P>Eğitim programı sonucunda hedeflenen kazanımlar:</P>
-        <AchieveList>
+        </div>
+        <h2 className="mt-10">Kazanımlar</h2>
+        <p className="leading-[1.8] mb-6">
+          Eğitim programı sonucunda hedeflenen kazanımlar:
+        </p>
+        <ul className="grid grid-cols-2 gap-2.5 list-none p-0 max-md:grid-cols-1">
           {[
             "Temel yazılım bilgisi",
             "Kendi kendine öğrenme becerisi",
@@ -294,13 +163,16 @@ export default function ZeroToHero() {
             "Teknoloji okur yazarlığı",
             "Diğer yazılım dillerinin önünün açılması",
           ].map((achieve, key) => (
-            <Achieve key={key}>
+            <li
+              key={key}
+              className="p-2.5 rounded bg-white/10"
+            >
               <Icon icon="check" size={16} color="#fff" />
-              <span>{achieve}</span>
-            </Achieve>
+              <span className="ml-2.5">{achieve}</span>
+            </li>
           ))}
-        </AchieveList>
-        <H2>Sık Sorulan Sorular</H2>
+        </ul>
+        <h2 className="mt-10">Sık Sorulan Sorular</h2>
         {[
           { q: "Eğitim ücretli mi?", a: "Ücretsiz" },
           { q: "Ne zaman başlayacak?", a: "1 Ağustos 2022" },
@@ -325,13 +197,16 @@ export default function ZeroToHero() {
             a: "Sertifika yok malesef.",
           },
         ].map(({ q, a }, index) => (
-          <QABlock key={index}>
-            <Question>{q}</Question>
-            <Answer>{a}</Answer>
-          </QABlock>
+          <div
+            key={index}
+            className="p-2.5 mb-4 rounded bg-white/10"
+          >
+            <div className="font-semibold mb-1">{q}</div>
+            <div className="font-light">{a}</div>
+          </div>
         ))}
-        <Footer />
-      </Wrapper>
-    </Page>
+        <div className="pt-32" />
+      </div>
+    </div>
   );
 }

@@ -1,35 +1,15 @@
-import styled from "styled-components";
-
-const TypesDiv = styled.div`
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 12px;
-`;
-
-const Type = styled.div`
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  &:before {
-    content: " ";
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: var(--${({ type }) => type});
-  }
-`;
-
 const Types = ({ types }) => (
-  <TypesDiv>
+  <div className="mt-6 grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-3">
     {types.map(({ name, type }, index) => (
-      <Type key={index} type={type}>
+      <div key={index} className="rounded flex items-center gap-2.5">
+        <span
+          className="block w-6 h-6 rounded-full shrink-0"
+          style={{ backgroundColor: `var(--color-type-${type})` }}
+        />
         {name}
-      </Type>
+      </div>
     ))}
-  </TypesDiv>
+  </div>
 );
 
 export default Types;
