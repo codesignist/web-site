@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import SocialArea from "/components/organisms/SocialArea";
-import device from "/utils/device";
+import SocialArea from "components/organisms/SocialArea";
+import device from "utils/device";
 import Link from "next/link";
 
 const fadeInUp = keyframes`

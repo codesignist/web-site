@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Social from "../molecules/Social";
-import device from "/utils/device";
+import device from "utils/device";
 
 const SocialAreaDiv = styled.div`
   display: grid;
