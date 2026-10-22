@@ -13,6 +13,27 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # 21.10.2026 Node.js güvenlik sürümü (CVE-2026-111497 Brotli RCE, TLS hostname
+      # bypass'ları vb.). Yama sunucudaki Node'dadır, repoda değil: Node yamasız ya da
+      # EOL ise deploy durmaz, Actions özetine uyarı düşer.
+      # https://nodejs.org/en/blog/vulnerability/october-2026-security-releases
+      - name: Node.js güvenlik kontrolü
+        run: |
+          v=$(node -p process.versions.node)
+          case "${v%%.*}" in
+            26) min=26.12.1 ;;
+            24) min=24.22.1 ;;
+            22) min=22.23.4 ;;
+            *)  min= ;;
+          esac
+          if [ -z "$min" ]; then
+            echo "::warning title=Node.js destek dışı::Sunucu Node $v kullanıyor; bu hat EOL, güvenlik yaması almıyor. 22.23.4 / 24.22.1 / 26.12.1 sürümüne geçin."
+          elif [ "$(printf '%s\n' "$min" "$v" | sort -V | head -n1)" != "$min" ]; then
+            echo "::warning title=Node.js yamasız::Sunucu Node $v kullanıyor; en az $min gerekli (21.10.2026 güvenlik sürümü)."
+          else
+            echo "Node $v güncel (>= $min)"
+          fi
+
       - name: Install dependencies
         run: pnpm i
 
